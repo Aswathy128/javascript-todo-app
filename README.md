@@ -21,6 +21,5 @@ A simple Todo List application built with HTML, CSS and JavaScript.
 - Delete button removes tasks
 - localStorage stores tasks in the browser
 
-  # JavaScript Todo App
-
-🚀 Live Demo: [Click Here](https://aswathy-todo-app.netlify.app)
+🚀 Live Demo: 
+[Click Here](https://aswathy-todo-app.netlify.app)
