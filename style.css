@@ -1,0 +1,112 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --text-color: #333333;
+    /*--bg-color: #ffffff;*/
+    --bg-color: #f0f2f5;
+    --font-family: Arial, sans-serif;
+    --danger-color: #e74c3c;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--bg-color);
+    min-height: 100vh;/*to give height to the div*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+.todo-container{
+    background-color: white;
+    width: 100%;
+    max-width: 550px;
+    padding:30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 20px;
+}
+.todo-container h1{
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+.input-area{
+    display: flex;
+    gap: 10px;
+}
+#taskInput{
+    flex: 1;
+    padding: 12px;
+    /*border: 1px solid #ccc;*/
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;   
+}
+#taskInput:focus{
+    outline: none;
+    border-color: var(--secondary-color);
+}
+#addBtn{
+    background-color: var(--secondary-color);
+    color:white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 18px;
+    font-weight: bold;
+    transition:background-color 0.3s ease;
+}
+#addBtn:hover{
+   background-color: #217dbb;
+}
+#taskList{
+    list-style: none;
+    margin-top: 20px;
+    padding-top: 5px;
+    
+}
+#taskList li {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    background-color: #eef0f3;
+    padding: 10px 14px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+#taskList li:hover {
+    background-color: #eef3f7;
+}
+#taskList li span {
+    color: var(--text-color);
+    font-size: 1rem;
+    flex: 1;
+    cursor: pointer;
+}
+.completed{
+    text-decoration: line-through;
+    opacity:0.6;
+}
+
+.delete-btn{
+   background-color: var(--danger-color);
+   color: white;
+   border: none;
+   border-radius: 8px;
+   padding: 8px 10px;
+   cursor: pointer;
+   font-size: 0.9rem;
+   font-weight: bold;
+   transition: background-color 0.3s ease;
+}
+.delete-btn:hover {
+    background-color: #c0392b;
+}
